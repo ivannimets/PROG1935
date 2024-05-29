@@ -1,0 +1,64 @@
+h1 { 
+	color: orangered; 
+	margin-bottom: -5px; 
+}
+#board { 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+} 
+.row { 
+	display: flex; 
+} 
+.cell { 
+	border: none; 
+	width: 80px; 
+	height: 80px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	font-size: 24px; 
+	text-align: center; 
+	cursor: pointer;
+    border: 1px solid gray; 
+} 
+.cell:active { 
+	outline: none;
+} 
+/* Reset Button */
+#reset { 
+	box-sizing: border-box; 
+	width: 95px; 
+	height: 40px;
+	border: 1px solid dodgerblue; 
+	margin-left: auto; 
+	border-radius: 8px; 
+	font-family: Verdana, 
+		Geneva, Tahoma, sans-serif; 
+
+	background-color: whitesmoke; 
+	color: dodgerblue; 
+	font-size: 20px; 
+	cursor: pointer; 
+    margin-top: 10px;
+} 
+
+/* Player turn space */
+#print { 
+	font-family: Verdana, 
+		Geneva, Tahoma, sans-serif; 
+	color: dodgerblue; 
+	font-size: 20px; 
+} 
+
+/* Main Container */
+#game { 
+	text-align: center; 
+} 
+
+/* Game Instruction Text */
+#rules { 
+	font-family: Verdana,Geneva, 
+					Tahoma, sans-serif; 
+	color: dodgerblue; 
+}
