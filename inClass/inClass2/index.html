@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <title>inClass2</title>
+</head>
+<body>
+    <div id="formToAdd">
+        <p>To add user enter their name, age and height</p>
+        <label for="name">Name</label>
+        <input type="name" id="nameInput" name="name"/>
+        <label for="age">Age</label>
+        <input type="number" id="ageInput" name="age"/>
+        <label for="height">Height</label>
+        <input type="number" id="heightInput" name="height"/>
+        <button id="addUserBtn" onclick="AddUserToList()">Add to list</button>
+    </div>
+    <div id="showInfo">
+        <p>Enter user name to show information</p>
+        <input type="name" id="nameToShow"/>
+        <button id="showBtn" onclick="ShowUser()">Show</button>
+    </div>
+    <p id="information"></p>
+</body>
+</html>
