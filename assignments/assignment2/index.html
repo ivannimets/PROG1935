@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Assignment2</title>
+</head>
+
+<body>
+    <h1>Conestoga Garage Sale</h1>
+    <h2>Raising money for The Frontline Fund</h2>
+    <div id="form">
+        <label for="name">Name</label>
+        <input type="name" name="name" id="name" placeholder="First Last" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="email@domain.com" />
+
+        <label for="creditCardNum">Credit Card Number</label>
+        <input type="text" name="creditCardNum" id="creditCardNum" placeholder="xxxx-xxxx-xxxx-xxxx" />
+
+        <label for="creditCardExpMonth">Credit Card Expiry Month</label>
+        <input type="text" name="creditCardExpMonth" id="creditCardExpMonth" placeholder="MMM" />
+
+        <label for="creditCardExpYear">Credit Card Expiry Year</label>
+        <input type="text" name="creditCardExpYear" id="creditCardExpYear" placeholder="YYYY" />
+
+        <h3 id="h3inform">Buy generously</h3>
+
+        <label for="numCaps">Number of Caps ($20)</label>
+        <input type="text" name="numCaps" id="numCaps" placeholder="10" />
+
+        <label for="numBottles">Number of Water Bottles ($5)</label>
+        <input type="text" name="numBottles" id="numBottles" placeholder="10" />
+
+        <label for="numPens">Number of Pens ($2)</label>
+        <input type="text" name="numPens" id="numPens" placeholder="10" />
+
+        <label for="numCandyBags">Number of Candy Bags ($10)</label>
+        <input type="text" name="numCandyBags" id="numCandyBags" placeholder="10" />
+
+        <label for="numCupCakes">Number of Cup Cakes ($3)</label>
+        <input type="text" name="numCupCakes" id="numCupCakes" placeholder="10" />
+
+        <p id="error" style="color: red; display: none;"></p>
+        <button id="checkoutButton" onclick="CheckoutClicked()">Checkout</button>
+    </div>
+    <div id="receipt">
+        <h3 id="h3inreceipt">Thank you for your purchase!</h3>
+        <table id="customerInformation">
+            <tr>
+                <td>Name</td>
+                <td id="usersName"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td id="usersEmail"></td>
+            </tr>
+            <tr>
+                <td>Credit Card</td>
+                <td id="usersCreditCard"></td>
+            </tr>
+        </table>
+        <table id="receiptInformation">
+
+        </table>
+        <div style="display: flex;" id="buttonsInReceipt">
+            <button id="closeButton" onclick="EditClicked();">Edit</button>
+            <button id="printButton" onclick="PrintClicked();">Save as PDF</button>
+        </div>
+    </div>
+</body>
+
+</html>

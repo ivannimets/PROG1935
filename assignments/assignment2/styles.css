@@ -1,0 +1,92 @@
+body {
+    width: 560px;
+    font: 1.2rem "Fira Sans", sans-serif;
+
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px;
+    border: 3px solid black;
+    box-shadow: 0 0 5px 5px #adadad;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+#h3inform, #checkoutButton {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+label {
+    margin: 10px 0px;
+}
+
+input[type="text"], input[type="email"], input[type="name"], input[type="number"] {
+    margin: 2px;
+    font: 0.9rem "Fira Sans", sans-serif;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+#checkoutButton, #closeButton, #printButton {
+    margin: 30px 0 0 0 ;
+    padding: 10px;
+    font: 1.2rem "Fira Sans", sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+#closeButton, #printButton { 
+    margin: 20px 2% 0 ;
+    width: 46%;
+}
+
+
+#checkoutButton:hover, #closeButton:hover, #printButton:hover {
+    color: black;
+    background-color: rgb(235, 235, 235);
+}
+#checkoutButton:active, #closeButton:active, #printButton:active {
+    background-color: rgb(129, 129, 129);
+}
+
+#receipt {
+    display: none;
+    grid-template-columns: 1fr;
+    margin: 20px;
+    border: 3px solid black;
+    box-shadow: 0 0 5px 5px #adadad;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+table, table tr, table td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: right;
+    padding: 5px;
+}
+table {
+    margin: 0 0 5px 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#customerInformation td:nth-child(1) {
+    text-align: center;
+    width: 40%;
+    font-weight: bold;
+}
+#customerInformation td:nth-child(2) {
+    width: 60%;
+}
+
+@media print {
+    #closeButton, #printButton, h1, h2 {
+        display: none;
+    }
+}
