@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+    <title>Conestoga Forest Restoration</title>
+</head>
+
+<body>
+    <div style="padding-bottom: 15px">
+        <h1>Conestoga Forrest Restoration</h1>
+        <p>Our goal is to restore forest's by planting trees, one tree at a time!</p>
+        <p>Tell us the number of rows and how many trees you would like in each column?</p>
+        <i>I.e. you could do 3 by 4 which would be a grid with 3 rows and 4 columns, totalling 12 trees.</i>
+    </div>
+    <div style="padding-bottom: 15px">
+        <h3>Create Tree Dig Site</h3>
+        <label>Tree Rows: </label><input id="numRows" type="text" />
+        <label>Tree Columns: </label><input id="numCols" type="text">
+        <button onclick="createPlantGrid()">Create Area Grid to Plant</button><br><br>
+        <img src="treeGrid.png" alt="treeGrid" width="275px">
+    </div>
+    <div style="padding-bottom: 15px">
+        <h3>Plant a tree!</h3>
+        <label>Row Coordinate Location: </label><input id="rowToPlant" type="text"><br><br>
+        <label>Column Coordinate Location: </label><input id="colToPlant" type="text" /><br><br>
+        <button onclick="plantTree()">Plant Tree!</button><br><br>
+        <img src="plantTree.jpg" alt="plantTree" width="275px">
+    </div>
+    <div>
+        <h3>Display Grid for Planted Trees</h3>
+        <button onclick="displayGridForPlantedTrees()">Display Grid for Planted Trees</button><br><br>
+        <div id="tableGrid"></div>
+    </div>
+</body>
+
+</html>
